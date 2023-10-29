@@ -1,0 +1,130 @@
+.trending {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.trendingSushi {
+  width: 100%;
+  min-height: 640px;
+  display: flex;
+  flex-direction: row;
+}
+.trendingDrink {
+  width: 100%;
+  min-height: 640px;
+  display: flex;
+  flex-direction: row;
+}
+.trendingContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 32px 64px;
+}
+.trendingList {
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.trendingList li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+  min-width: 210px;
+}
+.trendingIcon {
+  width: 24px;
+  height: 24px;
+  background: var(--primary-color);
+  border-radius: 100%;
+}
+.trendingIcon img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+.trendingList p {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  color: var(--secondary-color);
+}
+.trendingImag {
+  flex: 1;
+  position: relative;
+  padding: 32px 64px;
+  background-color: var(--color-white);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.terndingSushi .trendingImage {
+  background-image: url(../../assets/japanese_sushi.png);
+}
+.trendingDrink .trendingImage {
+  background-image: url(../../assets/japanese_drinks.png);
+}
+.trendingImag img {
+  width: 254px;
+  height: 260px;
+  object-fit: contain;
+}
+.trendingDiscover {
+  position: absolute;
+  top: 44%;
+  left: 44%;
+  z-index: 1;
+  width: 160px;
+  height: 160px;
+  background-color: var(--secondary-color);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trendingDiscover p {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+}
+/* Arrows */
+.trendingArrow {
+  position: absolute;
+  z-index: 1;
+}
+.trendingArrow img {
+  object-fit: contain;
+}
+.trendingArrowLeft {
+  left: -2.5px;
+  top: 12%;
+}
+.trendingArrowLeft img,
+.trendingArrowTop img {
+  width: auto;
+  height: 100%;
+}
+.trendingArrowTop {
+  top: -10.5px;
+  left: 12%;
+}
+.trendingArrowBottom {
+  bottom: -6.5px;
+  right: 12%;
+}
+.trendingArrowBottom img,
+.trendingArrowRight img {
+  width: 100%;
+  height: auto;
+}
+.trendingArrowRight {
+  right: -2.5px;
+  bottom: 12%;
+}
